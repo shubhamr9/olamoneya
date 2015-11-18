@@ -1,0 +1,14 @@
+{
+  "name": "olamoneykj",
+  "description": "KhaaliJeb Test Ola Money",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "crypto": "~0.0.3",
+    "express": "~4.9.8",
+    "body-parser": "~1.14.1",
+    "router": "~ 1.1.3"	 		
+  }
+}

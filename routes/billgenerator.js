@@ -4,9 +4,9 @@ var http = require('http');
 
 module.exports.billgenerator = function(req, res, next) 
 {
-	var phoneno = '7899861294';
+	var phoneno = 'x';
 	var command = "debit";
-	var accessToken = "3u41p82uT1";
+	var accessToken = "x";
 	var uniqueId = "RGXTZA";
 	var comments = "RMA";
 	var udf = "nothing";
@@ -16,7 +16,7 @@ module.exports.billgenerator = function(req, res, next)
 	var amount = "100.00";
 	var currency = "INR";
 	var couponCode = "optional";
-	var salt = "n7QRr98Ui4";
+	var salt = "x";
 
 	var z = (accessToken+'|'+uniqueId+'|'+comments+'|'+udf+'|'+returnUrl+'|'+notificationUrl+'|'+currency+'|'+amount+'|'+couponCode+'|'+salt);
 	var sha = crypto.createHash('sha512').update(String(z));

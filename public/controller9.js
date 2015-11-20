@@ -6,17 +6,13 @@ app.controller('MyCtrl', ['$scope', 'Upload', '$timeout','$http',  function ($sc
 
 
     $scope.addData = function() {
-
-
-
-
         console.log($scope.merchant);
         console.log("whore");
         $http.post('../billgenerator', $scope.merchant).success(function (response) {
             console.log(response);
         });
-
-
     }
+    
+
 
 }]);

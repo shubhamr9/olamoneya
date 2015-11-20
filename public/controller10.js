@@ -12,7 +12,11 @@ app.controller('MyCtrl', ['$scope', 'Upload', '$timeout','$http',  function ($sc
 
 
         console.log("whore1");
+<<<<<<< HEAD
         $http.post('../olarequest').success(function (response) {
+=======
+        $http.get('../olarequest').success(function (response) {
+>>>>>>> origin/master
             console.log(response);
         });
 

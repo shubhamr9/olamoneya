@@ -16,6 +16,16 @@ app.get('/', function (req, res) {
 
 app.post('/billgenerator', route_billgenerator.billgenerator);
 
+app.get('/olarequest', function (req, res) {
+console.log(req);
+console.log("hola");
+  });
+
+app.get('/olarequestnotify', function (req, res) {
+console.log(req);
+  });
+
+
 var port = process.env.PORT || 8080;
 
 app.listen(port, function() {

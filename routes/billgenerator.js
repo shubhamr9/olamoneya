@@ -11,7 +11,7 @@ module.exports.billgenerator = function(req, res, next)
 	var comments = "RMA";
 	var udf = "nothing";
 	var hash; 
-	var returnUrl = "http://http://olamoneytest.herokuapp.com/olarequest";
+	var returnUrl = "http://http://olamoneytest.herokuapp.com/olamoney.html";
 	var notificationUrl = "http://http://olamoneytest.herokuapp.com/olarequestnotify";
 	var amount = "100.00";
 	var currency = "INR";

@@ -13,24 +13,6 @@ app.controller('MyCtrl', ['$scope', 'Upload', '$timeout','$http',  function ($sc
         });
     }
     
-/*$http({
-  method: 'GET',
-  url: '/olarequest'
-}).then(function successCallback(response) {
-        $http.post('../olarequest').success(function (response) {
-            console.log("hola"+response);
-        });
 
-  }, function errorCallback(response) {
-console.log(response);
-  });
-*/
 
-function fetch() {
-    $http.get("https://olamoneytest.herokuapp.com/olarequest")
-     .success(function(response){console.log(response);});
-
-    $http.get("http://www.omdbapi.com/?s=" + $scope.search)
-     .success(function(response){$scope.related = response;});
-  }
 }]);

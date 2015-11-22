@@ -17,13 +17,13 @@ app.get('/', function (req, res) {
 app.post('/billgenerator', route_billgenerator.billgenerator);
 
 app.get('/olarequest', function (req, res) {
-<<<<<<< HEAD
+
 console.log(req);
 console.log("hola");
   });
 
 app.get('/olarequestnotify', function (req, res) {
-=======
+
 console.log("We are here request");	
 console.log(req);
   });

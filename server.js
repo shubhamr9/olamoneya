@@ -30,7 +30,7 @@ console.log(req);
 
 app.get('/olarequestnotify', function (req, res) {
 console.log("We are here request notify");
->>>>>>> origin/master
+
 console.log(req);
   });
 

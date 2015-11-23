@@ -23,7 +23,7 @@ module.exports.billgenerator = function(req, res, next)
 	console.log(z);
 	var result = sha.digest('hex');
 	console.log(result);
-	var base64form = new Buffer (JSON.stringify({"command": command, "accessToken": accessToken, "uniqueId": uniqueId, "comments": comments, "udf": udf, "returnUrl": returnUrl,"notificationUrl": notificationUrl, "amount":amount, "currency":currency, "couponCode":couponCode,"salt":salt})).toString("base64");
+	var base64form = new Buffer (JSON.stringify({"command": command, "accessToken": accessToken, "uniqueId": uniqueId, "comments": comments, "udf": udf, "hash": hash, "returnUrl": returnUrl,"notificationUrl": notificationUrl, "amount":amount, "currency":currency, "couponCode":couponCode})).toString("base64");
 	console.log(base64form);
 	var options = {
 					  host: 'sandbox.olamoney.com',

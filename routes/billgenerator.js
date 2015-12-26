@@ -4,10 +4,10 @@ var http = require('http');
 
 module.exports.billgenerator = function(req, res, next) 
 {
-	var phoneno = '7899861294';
+	var phoneno = '1237173713';
 	var command = "debit";
-	var accessToken = "3u41p82uT1";
-	var uniqueId = "RGXTZA";
+	var accessToken = "asdhha";
+	var uniqueId = "asdasd";
 	var comments = "RMA";
 	var udf = "nothing";
 	var hash; 
